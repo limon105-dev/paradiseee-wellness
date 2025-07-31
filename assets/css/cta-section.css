@@ -1,0 +1,36 @@
+/* cta-section css start */
+.cta-section{
+    background-image: url("../images/cta-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cta-content{
+    padding: 190px 0;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-title{
+    text-transform: capitalize;
+}
+
+.cta-title em{
+    font-style: normal;
+    color: var(--brand-color);
+}
+
+.cta-text {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 600px;
+    margin: 30px auto 0;
+}
+
+.cta-content .btn{
+    margin: 30px 0 0 0;
+}
+/* cta-section css end */

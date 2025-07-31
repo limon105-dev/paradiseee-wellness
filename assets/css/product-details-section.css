@@ -1,0 +1,77 @@
+/* product-details-section css start */
+.product-details-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-details-section .section-left-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.product-details-section .section-right-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.product-details-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.product-details-content {
+    width: 66%;
+}
+
+.product-details-content .section-heading-wrapper {
+    text-align: left;
+}
+
+.product-details-content .section-heading-wrapper .section-heading-text {
+    margin-left: 0;
+    max-width: 650px;
+}
+
+.product-details-list li {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color2);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.product-details-list li:first-child {
+    padding-top: 0;
+}
+
+.product-details-list li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.product-details-title{
+    width: 40%;
+    text-transform: capitalize;
+}
+
+.product-details-text{
+    width: 60%;
+}
+
+.product-details-title,
+.product-details-text{
+    color: var(--text-muted);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.product-details-img {
+    width: 34%;
+}
+
+/* product-details-section css end */

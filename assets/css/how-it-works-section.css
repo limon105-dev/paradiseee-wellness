@@ -175,3 +175,124 @@
 
     /* how-it-works-section css end */
 }
+
+@media only screen and (max-width: 992px) {
+
+    /* how-it-works-section css start */
+    .how-it-works-line {
+        left: 50px;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+    .how-it-works-items {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        justify-content: space-between;
+    }
+
+    .how-it-works-item {
+        right: auto;
+        left: 0;
+    }
+
+    .how-it-works-item:first-child {
+        right: auto;
+        left: 0;
+    }
+
+    .how-it-works-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .how-it-works-content {
+        max-width: 100%;
+        margin: 130px 0 0 134px;
+        text-align: left;
+    }
+
+    .how-it-works-item.text-align-right .how-it-works-content {
+        text-align: left;
+    }
+
+    .how-it-works-number {
+        position: absolute;
+        left: 134px;
+        top: 0;
+    }
+
+    .how-it-works-content-text {
+        margin: 10px 0 0 0;
+    }
+
+    .how-it-works-item:nth-child(2) {
+        right: auto;
+        left: 0;
+    }
+
+    .how-it-works-item:last-child {
+        left: 0;
+        right: auto;
+        bottom: 0;
+    }
+
+    .how-it-works-section .section-btn {
+        margin: 50px 0 0 0;
+    }
+
+    /* how-it-works-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* how-it-works-section css start */
+    .how-it-works-wrapper {
+        height: 550px;
+    }
+
+    .how-it-works-line {
+        left: 20px;
+    }
+
+    .how-it-works-icon {
+        max-width: 40px;
+        min-width: 40px;
+        height: 40px;
+    }
+
+    .how-it-works-icon svg {
+        max-width: 21px;
+        max-height: 21px;
+    }
+
+    .how-it-works-number {
+        left: 60px;
+    }
+
+    .how-it-works-number h2 {
+        font-size: 40px;
+    }
+
+    .how-it-works-content {
+        margin: 65px 0 0 60px;
+    }
+
+    .how-it-works-content-title {
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .how-it-works-content-text {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    /* how-it-works-section css end */
+}

@@ -1,5 +1,5 @@
 /* product-feature-section css start */
-.product-feature-table-area {
+.product-feature-box {
     padding: 100px 50px;
     background: linear-gradient(132.4deg, rgba(255, 255, 255, 0) 1.31%, rgba(255, 255, 255, 0.05) 50.4%, rgba(255, 255, 255, 0) 99.48%);
     border: 1px solid;
@@ -12,38 +12,165 @@
     -o-border-radius: 20px;
 }
 
-.product-feature-table {
+.product-feature-wrapper {
     width: 100%;
+    display: flex;
 }
 
-.product-feature-table th,
-.product-feature-table td {
+.product-feature-items:first-child {
+    width: 25%;
+    padding: 0 20px 0 0;
+}
+
+.product-feature-items:nth-child(2) {
+    width: 25%;
+    padding: 0 60px;
+    border-width: 1px;
+    border-style: solid;
+    border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    border-image-slice: 1;
+}
+
+.product-feature-items:last-child {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.product-feature-items:last-child .product-feature-item {
+    padding: 60px 0 33px;
+}
+
+.product-feature-item {
+    padding: 60px 0;
     border-bottom: 1px solid;
     border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
     border-image-slice: 1;
-    color: var(--white);
-    text-align: left;
-    padding: 26px;
 }
 
-.product-feature-table tr:last-child td{
+.product-feature-items .product-feature-item:first-child {
+    padding: 0;
     border-bottom: 0;
 }
 
-.product-feature-table th {
+.product-feature-items .product-feature-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.product-feature-title {
+    margin: 32px 0 0 0;
     font-size: 32px;
+    text-transform: capitalize;
     font-weight: 400;
 }
 
-.table-heading-text {
-    margin: 32px 0 0 0;
-    text-transform: capitalize;
-}
-
-.product-feature-table td {
+.product-feature-item-title,
+.product-feature-item-text {
     font-size: 22px;
     font-weight: 300;
     color: var(--text-muted3);
 }
 
+.product-feature-item-mobile-content {
+    display: none;
+}
+
 /* product-feature-section css end */
+
+@media only screen and (max-width: 1080px) {
+
+    /* product-feature-section css start */
+    .product-feature-title {
+        font-size: 28px;
+    }
+
+    .product-feature-items:nth-child(2) {
+        padding: 0 25px;
+    }
+
+    .product-feature-items:first-child {
+        width: 28%;
+    }
+
+    .product-feature-items:last-child {
+        width: 47%;
+        padding: 0 20px;
+    }
+
+    .product-feature-item-text {
+        font-size: 20px;
+    }
+
+    /* product-feature-section css end */
+}
+
+@media only screen and (max-width: 992px) {
+
+    /* product-feature-section css start */
+    .product-feature-items:first-child {
+        width: 100%;
+    }
+
+    .product-feature-items:nth-child(2) {
+        display: none;
+    }
+
+    .product-feature-items:last-child {
+        display: none;
+    }
+
+    .product-feature-title {
+        margin: 24px 0 0 0;
+    }
+
+    .product-feature-item {
+        padding: 30px 0;
+    }
+
+    .product-feature-items .product-feature-item:nth-child(2) {
+        padding: 50px 0 30px;
+    }
+
+    .product-feature-item-title {
+        color: var(--white);
+    }
+
+    .product-feature-item-mobile-content {
+        display: block;
+        margin: 14px 0 0 0;
+    }
+
+    .product-feature-item-sub-title {
+        color: var(--text-muted3);
+        font-size: 20px;
+    }
+
+    .product-feature-item-mobile-content ul {
+        padding: 10px 0 0 30px;
+    }
+
+    .product-feature-item-mobile-content ul li {
+        margin: 0 0 10px 0;
+        list-style-type: disc;
+        color: var(--text-muted3);
+    }
+
+    .product-feature-item-mobile-content ul li p {
+        font-size: 20px;
+        font-weight: 300;
+        color: var(--text-muted3);
+        text-transform: capitalize;
+    }
+
+    /* product-feature-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* product-feature-section css start */
+    .product-feature-box {
+        padding: 80px 20px 40px;
+    }
+
+    /* product-feature-section css end */
+}

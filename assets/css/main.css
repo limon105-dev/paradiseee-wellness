@@ -382,8 +382,8 @@ button {
     right: 0px;
     bottom: 0px;
     z-index: 1;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     user-select: none;
     cursor: pointer;
     display: none;
@@ -665,6 +665,8 @@ button {
 
 .footer-links li a {
     color: var(--text-muted);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .footer-links li a:hover {
@@ -740,11 +742,11 @@ button {
 
     /* common css start */
     .section-btn {
-        margin: 35px 0 0 0;
+        margin: 30px 0 0 0;
     }
 
     .section {
-        padding: 60px 0;
+        padding: 80px 0;
     }
 
     .section-heading-wrapper {
@@ -772,9 +774,9 @@ button {
         left: 0;
         right: 0;
         bottom: 0;
-        width: 100vw;
+        width: 100dvw;
         background-color: rgba(0, 0, 0, 0.3);
-        height: 100vh;
+        height: 100dvh;
         z-index: 9999;
         transition: 300ms;
         opacity: 0;
@@ -791,8 +793,8 @@ button {
         top: 0;
         left: 0;
         width: 340px;
-        background-color: var(--white);
-        height: 100vh;
+        background-color: var(--body-color);
+        height: 100dvh;
         z-index: 2;
         transition: 300ms;
         transform: translateX(-100%);
@@ -804,7 +806,7 @@ button {
 
     .nav-links {
         overflow-y: auto;
-        height: calc(100% - 121px);
+        height: calc(100% - 160px);
         align-items: flex-start;
         justify-content: flex-start;
     }
@@ -889,11 +891,12 @@ button {
 
     .mobile-side-bar-top {
         display: flex;
-        height: 80px;
+        height: 74px;
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
         border-bottom: 1px solid var(--border-color);
+        flex-direction: row-reverse;
     }
 
     .mobile-menu-btn {
@@ -918,6 +921,10 @@ button {
         align-items: center;
     }
 
+    .nav-link-text-icon {
+        display: none;
+    }
+
     .nav-links ul li span .icon {
         padding: 0;
         border: none;
@@ -938,9 +945,9 @@ button {
     .nav-icons.mabile-nav-icons {
         display: flex;
         justify-content: center;
-        padding: 20px 0;
-        border-top: 1px solid var(--white);
-        background-color: var(--brand-color);
+        padding: 16px 0;
+        border-top: 1px solid var(--border-color);
+        background-color: var(--body-color);
         position: absolute;
         bottom: 0;
         left: 0;
@@ -949,9 +956,32 @@ button {
         z-index: 1;
     }
 
+    .mabile-nav-icons.nav-icons li a {
+        background: linear-gradient(132.4deg, rgba(255, 255, 255, 0) 1.31%, rgba(255, 255, 255, 0.05) 50.4%, rgba(255, 255, 255, 0) 99.48%);
+        border: 1px solid;
+        border-image-source: linear-gradient(113.18deg, rgba(255, 255, 255, 0.5) -5.09%, rgba(255, 255, 255, 0) 55.69%),
+            linear-gradient(287.9deg, rgba(255, 255, 255, 0.5) -6.1%, rgba(255, 255, 255, 0) 19.35%);
+        backdrop-filter: blur(17.587284088134766px);
+    }
+
+    .nav-icon-and-btn .btn {
+        display: none;
+    }
+
+    .nav-icons li a,
+    .nav-icons li span {
+        width: 40px;
+        height: 40px;
+    }
+
     /* navbar css end */
 
     /* footer-section css start */
+    .footer-items {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
     /* footer-section css end */
 }
 
@@ -960,11 +990,11 @@ button {
 
     /* common css start */
     h1 {
-        font-size: 48px;
+        font-size: 50px;
     }
 
     h2 {
-        font-size: 38px;
+        font-size: 32px;
     }
 
     h3 {
@@ -975,27 +1005,36 @@ button {
         font-size: 19px;
     }
 
-    p {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
+    body {
+        margin: 74px 0 0 0;
     }
 
-    .section {
-        padding: 50px 0;
-    }
-
-    .section-btn {
-        margin: 25px 0 0 0;
+    .btn {
+        font-size: 16px;
+        padding: 12px 35px;
     }
 
     .section-heading-wrapper {
-        margin-bottom: 25px;
+        margin-bottom: 40px;
+    }
+
+    .section-heading-text {
+        font-size: 16px;
+        padding: 20px 0 0 0;
+        line-height: 24px;
     }
 
     /* common css end */
 
     /* navbar section css start */
+    .navbar {
+        height: 74px;
+    }
+
+    .nav-icon-and-btn {
+        gap: 16px;
+    }
+
     .nav-icons.desktop-nav-icons {
         min-width: 110px;
     }
@@ -1019,45 +1058,38 @@ button {
         display: none;
     }
 
+
+    .mobile-side-bar-top {
+        height: 74px;
+    }
+
     /* navbar section css end */
 
     /* footer section css start */
-    .footer-section {
-        padding: 20px 0 0 0;
-    }
-
-    .footer-item:first-child {
+    .footer-item {
         width: 100%;
     }
 
-    .footer-item:nth-child(2) {
-        width: 18%;
-    }
-
-    .footer-item:nth-child(3) {
-        width: 27%;
+    .footer-text {
+        margin: 22px 0 0 0;
+        max-width: 100%;
     }
 
     .footer-item:last-child {
-        width: 36%;
+        max-width: 100%;
+        width: 100%;
     }
 
-    .footer-item-title {
-        margin: 0 0 10px 0;
+    .copyright {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .footer-text {
-        margin: 10px 0 0 0;
+    .copyright ul li a {
+        color: var(--text-muted);
+        font-size: 13px;
     }
 
-    .footer-list li {
-        margin: 0 0 6px 0;
-    }
-
-    .copyright-img {
-        height: 19px;
-        gap: 5px;
-    }
 
     /* footer section css end */
 }
@@ -1065,14 +1097,6 @@ button {
 @media only screen and (max-width: 575px) {
 
     /* common css start */
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
     h3 {
         font-size: 22px;
     }
@@ -1085,15 +1109,6 @@ button {
         margin: 60px 0 0 0;
     }
 
-    .section {
-        padding: 30px 0;
-    }
-
-    .btn {
-        padding: 10px 24px;
-        font-size: 14px;
-    }
-
     .section-heading-wrapper {
         margin-bottom: 20px;
     }
@@ -1104,10 +1119,11 @@ button {
 
     /* common css end */
 
-    /* navbar css start */
-
-    /* navbar css start */
-
     /* footer section css start */
+    .footer-newsletter-field input {
+        padding: 0 10px 0 10px;
+        width: calc(100% - 140px);
+    }
+
     /* footer section css end */
 }

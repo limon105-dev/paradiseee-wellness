@@ -1,4 +1,10 @@
 /* faq section css start */
+.faq-section {
+    border-bottom: 1px solid;
+    border-image-source: linear-gradient(107deg, #111111 59.97%, rgba(255, 255, 255, 0.6) 100%);
+    border-image-slice: 1;
+}
+
 .faq-accordion {
     width: 100%;
 }
@@ -63,9 +69,25 @@
 
 /* faq section css end */
 
-@media only screen and (max-width:992px) {
+@media only screen and (max-width: 767px) {
 
     /* faq section css start */
+    .faq-accordion-item {
+        padding: 32px 14px;
+    }
+
+    .faq-accordion-item .item-title-wrapper .item-title {
+        font-size: 18px;
+    }
+
+    .faq-accordion-item .item-title-wrapper .icon svg {
+        width: 15px;
+        height: 7px;
+    }
+
+    .faq-accordion-item-content {
+        padding: 14px 0 0 0;
+    }
 
     /* faq section css end */
 }

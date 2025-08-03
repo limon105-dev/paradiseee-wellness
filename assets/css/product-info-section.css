@@ -57,3 +57,34 @@
 }
 
 /* product-info section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* product-info section css start */
+    .product-info-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* product-info section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* product-info section css start */
+    .product-info-item {
+        padding: 30px 24px;
+    }
+
+    /* product-info section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* product-info section css start */
+    .product-info-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* product-info section css end */
+}

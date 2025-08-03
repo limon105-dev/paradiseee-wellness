@@ -1,5 +1,5 @@
 /* hero-section css start */
-.hero-section{
+.hero-section {
     background-image: url("../images/hero-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -7,7 +7,7 @@
     height: 768px;
 }
 
-.hero-section .container{
+.hero-section .container {
     height: 100%;
 }
 
@@ -17,12 +17,12 @@
     height: 100%;
 }
 
-.hero-content-inner{
+.hero-content-inner {
     padding: 0 0 160px 0;
     max-width: 850px;
 }
 
-.hero-title em{
+.hero-title em {
     font-style: normal;
     color: var(--brand-color);
 }
@@ -32,7 +32,39 @@
     margin: 80px 0 0 0;
 }
 
-.hero-content-inner .btn{
-        margin: 24px 0 0 0;
+.hero-content-inner .btn {
+    margin: 24px 0 0 0;
 }
+
 /* hero-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* hero-section css start */
+    .hero-content-inner {
+        padding: 0 0 60px 0;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin: 50px auto 0;
+    }
+
+    .hero-content-inner .btn {
+        margin: 40px 0 0 0;
+        box-shadow: 0px 0px 37.67px 0px #EE0004F2;
+    }
+
+    /* hero-section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* hero-section css start */
+
+    .hero-section {
+        height: 630px;
+    }
+
+    /* hero-section css end */
+}

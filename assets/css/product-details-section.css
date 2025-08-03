@@ -18,6 +18,10 @@
     z-index: -1;
 }
 
+.section-heading-wrapper.mobile-section-heading {
+    display: none;
+}
+
 .product-details-wrapper {
     display: flex;
     align-items: center;
@@ -54,20 +58,21 @@
     border-bottom: none;
 }
 
-.product-details-title{
+.product-details-title {
     width: 40%;
     text-transform: capitalize;
 }
 
-.product-details-text{
+.product-details-text {
     width: 60%;
 }
 
 .product-details-title,
-.product-details-text{
-    color: var(--text-muted);
+.product-details-text {
+    color: var(--text-muted3);
     font-size: 20px;
     line-height: 30px;
+    font-weight: 300;
 }
 
 .product-details-img {
@@ -75,3 +80,74 @@
 }
 
 /* product-details-section css end */
+
+@media only screen and (max-width: 767px) {
+    /* product-details-section css start */
+
+    .section-heading-wrapper.mobile-section-heading {
+        display: block;
+    }
+
+    .product-details-content .section-heading-wrapper {
+        display: none;
+    }
+
+    .product-details-wrapper {
+        gap: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .product-details-content {
+        width: 100%;
+    }
+
+    .product-details-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        position: relative;
+    }
+
+    .product-details-list::before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: var(--border-color2);
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    .product-details-list li {
+        align-items: flex-start;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .product-details-list li:last-child {
+        border-bottom: 1px solid var(--border-color2);
+    }
+
+    .product-details-title {
+        width: 100%;
+    }
+
+    .product-details-text {
+        width: 100%;
+    }
+
+    .product-details-section .section-left-bg {
+        display: none;
+    }
+
+    .product-details-section .section-right-bg {
+        display: none;
+    }
+
+    /* product-details-section css end */
+}

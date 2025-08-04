@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 768px;
+    /* position: relative; */
 }
 
 .hero-section .container {
@@ -33,16 +34,58 @@
 }
 
 .hero-content-inner .btn {
-    margin: 24px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
+.hero-badge {
+    max-width: 1300px;
+    margin: -65px auto 0;
+    background: linear-gradient(132.4deg, rgba(255, 255, 255, 0) 1.31%, rgba(255, 255, 255, 0.05) 50.4%, rgba(255, 255, 255, 0) 99.48%);
+    backdrop-filter: blur(70px);
+    border: 0.5px solid var(--text-muted);
+    padding: 35px 55px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.hero-badge-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-badge-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.hero-badge-item-text {
+    font-size: 18px;
+}
+
+
 /* hero-section css end */
+
+@media only screen and (max-width: 1340px) {
+
+    /* hero-section css start */
+    .hero-badge {
+        margin: -65px 20px 0;
+    }
+
+    /* hero-section css end */
+}
 
 @media only screen and (max-width: 992px) {
 
     /* hero-section css start */
     .hero-content-inner {
-        padding: 0 0 60px 0;
         text-align: center;
     }
 
@@ -55,6 +98,11 @@
         box-shadow: 0px 0px 37.67px 0px #EE0004F2;
     }
 
+    .hero-badge {
+        margin: -54px 20px 0;
+        padding: 20px;
+    }
+
     /* hero-section css end */
 }
 
@@ -63,7 +111,31 @@
     /* hero-section css start */
 
     .hero-section {
-        height: 630px;
+        height: 633px;
+    }
+
+    .hero-content-inner {
+        padding: 0 0 115px 0;
+    }
+
+    .hero-badge {
+        margin: -39px 20px 0;
+    }
+
+    .hero-badge-items {
+        justify-content: flex-start;
+        overflow-x: auto;
+        width: 100%;
+        scrollbar-width: none;
+    }
+
+    .hero-badge-item-text {
+        font-size: 14px;
+        text-wrap-mode: nowrap;
+    }
+
+    .hero-badge-item-img {
+        min-width: 86px;
     }
 
     /* hero-section css end */

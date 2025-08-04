@@ -1,0 +1,80 @@
+/* chart-section css start */
+.chart-section {
+    border-bottom: 1px solid;
+    border-image-source: linear-gradient(270deg, #111111 59.97%, rgba(255, 255, 255, 0.6) 100%);
+    border-image-slice: 1;
+    background-color: #030202;
+    padding: 225px 0 20px;
+}
+
+.chart-section .section-heading-wrapper {
+    margin: 0;
+}
+
+.chart-img.mobile-chart-img {
+    display: none;
+}
+
+.chart-section .product-info-items {
+    margin: 40px 0 0;
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.chart-section .product-info-items .product-info-item {
+    padding: 20px 14px;
+}
+
+.chart-section .product-info-items .product-info-item .product-info-text {
+    margin: 10px 0 0 0;
+    font-weight: 400;
+}
+
+.chart-section .product-info-items .product-info-item .product-info-text:nth-child(2) {
+    text-transform: capitalize;
+}
+
+.chart-section .product-info-items .product-info-item .product-info-text:last-child {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+/* chart-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* chart-section css start */
+    .chart-section {
+        padding: 140px 0 80px;
+    }
+
+    /* chart-section css end */
+}
+
+@media only screen and (max-width:767px) {
+
+    /* chart-section css start */
+    .chart-section {
+        padding: 120px 0 80px;
+    }
+
+    .chart-img.desktop-chart-img {
+        display: none;
+    }
+
+    .chart-img.mobile-chart-img {
+        display: block;
+    }
+
+    .chart-section .product-info-items {
+        display: grid;
+    }
+
+    .chart-section .product-info-items .product-info-item::before {
+        opacity: 0.3;
+    }
+
+    /* chart-section css end */
+}

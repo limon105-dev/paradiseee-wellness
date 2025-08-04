@@ -247,13 +247,14 @@ button {
     overflow: hidden;
     background: #FFFFFF29;
     border: 1.26px solid #FFFFFF63;
-    box-shadow: 0px 12.56px 37.67px 0px #EE000459;
+    box-shadow: 0px 0px 37.67px 0px #EE0004F2;
 }
 
 .secondary-btn:hover {
     color: var(--white);
     border-color: var(--white);
     background-color: transparent;
+    box-shadow: none;
 }
 
 /* button css end */

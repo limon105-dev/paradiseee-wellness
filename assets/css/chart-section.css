@@ -74,6 +74,13 @@
 
     .chart-section .product-info-items .product-info-item::before {
         opacity: 0.3;
+        width: 491px;
+        height: 411px;
+    }
+
+    .chart-section .product-info-items .product-info-item .product-info-item-border {
+        background: linear-gradient(113.18deg, #FF2A2A -5.09%, rgba(255, 42, 42, 0) 55.69%),
+        linear-gradient(287.9deg, #FF2A2A -6.1%, rgba(255, 42, 42, 0) 19.35%);
     }
 
     /* chart-section css end */

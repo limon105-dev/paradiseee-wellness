@@ -10,16 +10,30 @@
 }
 
 .faq-accordion-item {
+    position: relative;
     margin: 0 0 24px 0;
     padding: 32px 54px;
     background: linear-gradient(214.06deg, rgba(255, 255, 255, 0) 11.58%, rgba(255, 255, 255, 0.05) 53.91%, rgba(255, 255, 255, 0) 96.25%);
-    border: 1px solid;
-    border-image-source: linear-gradient(113.29deg, rgba(255, 255, 255, 0.7) 5.52%, rgba(255, 255, 255, 0) 33.55%), linear-gradient(282.51deg, rgba(255, 255, 255, 0.7) 4.26%, rgba(255, 255, 255, 0) 14.8%);
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+}
+
+.faq-accordion-item-border {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 0.67px;
+    background: linear-gradient(169deg, rgba(255, 255, 255, 0.7) 5.52%, rgba(255, 255, 255, 0) 33.55%), linear-gradient(344deg, rgba(255, 255, 255, 0.7) 4.26%, rgba(255, 255, 255, 0) 14.8%);
+    -webkit-mask: linear-gradient(#ffffff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.6;
 }
 
 .faq-accordion-item:last-child {

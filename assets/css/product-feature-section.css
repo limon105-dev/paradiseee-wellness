@@ -1,15 +1,33 @@
 /* product-feature-section css start */
 .product-feature-box {
+    position: relative;
     padding: 100px 50px;
     background: linear-gradient(132.4deg, rgba(255, 255, 255, 0) 1.31%, rgba(255, 255, 255, 0.05) 50.4%, rgba(255, 255, 255, 0) 99.48%);
-    border: 1px solid;
-    border-image-source: linear-gradient(119.32deg, #FFFFFF -5.64%, rgba(255, 255, 255, 0) 24.05%), linear-gradient(294.85deg, #FFFFFF -4.68%, rgba(255, 255, 255, 0) 19.82%);
     backdrop-filter: blur(11.72485637664795px);
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+
+.product-feature-box-border {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 0.67px;
+    background: linear-gradient(119.32deg, #FFFFFF -5.64%, rgba(255, 255, 255, 0) 24.05%), linear-gradient(294.85deg, #FFFFFF -4.68%, rgba(255, 255, 255, 0) 19.82%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    opacity: 0.6;
 }
 
 .product-feature-wrapper {

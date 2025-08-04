@@ -52,16 +52,30 @@
 }
 
 .icon-img-inner-item {
+    position: relative;
     border-radius: 8px;
     padding: 20px 20px 37px;
     background: linear-gradient(132.4deg, rgba(255, 255, 255, 0) 1.31%, rgba(255, 255, 255, 0.05) 50.4%, rgba(255, 255, 255, 0) 99.48%);
-    border: 0.67px solid;
-    border-image-source: linear-gradient(113.18deg, rgba(255, 255, 255, 0.5) -5.09%, rgba(255, 255, 255, 0) 55.69%), linear-gradient(287.9deg, rgba(255, 255, 255, 0.5) -6.1%, rgba(255, 255, 255, 0) 19.35%);
     backdrop-filter: blur(11.72485637664795px);
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+}
+
+.icon-img-inner-item-border {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    padding: 0.67px;
+    background: linear-gradient(113.18deg, rgba(255, 255, 255, 0.5) -5.09%, rgba(255, 255, 255, 0) 55.69%),
+        linear-gradient(287.9deg, rgba(255, 255, 255, 0.5) -6.1%, rgba(255, 255, 255, 0) 19.35%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .icon-img-icon {

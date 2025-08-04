@@ -643,11 +643,38 @@ button {
 }
 
 .footer-item .nav-icons li a {
+    position: relative;
     background: linear-gradient(132.4deg, rgba(255, 255, 255, 0) 1.31%, rgba(255, 255, 255, 0.05) 50.4%, rgba(255, 255, 255, 0) 99.48%);
-    border: 1px solid;
-    border-image-source: linear-gradient(113.18deg, rgba(255, 255, 255, 0.5) -5.09%, rgba(255, 255, 255, 0) 55.69%),
-        linear-gradient(287.9deg, rgba(255, 255, 255, 0.5) -6.1%, rgba(255, 255, 255, 0) 19.35%);
     backdrop-filter: blur(17.587284088134766px);
+}
+
+.nav-icons li a:hover .icon-links-item-border {
+    background: linear-gradient(113.18deg, rgb(255, 42, 42) -5.09%, rgba(255, 255, 255, 0) 55.69%), linear-gradient(287.9deg, rgb(255, 42, 42) -6.1%, rgba(255, 255, 255, 0) 19.35%);
+    opacity: 1;
+}
+
+.icon-links-item-border {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 1px;
+    background: linear-gradient(113.18deg, rgba(255, 255, 255, 0.5) -5.09%, rgba(255, 255, 255, 0) 55.69%), linear-gradient(287.9deg, rgba(255, 255, 255, 0.5) -6.1%, rgba(255, 255, 255, 0) 19.35%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    opacity: 0.6;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
 }
 
 .footer-item-title {
@@ -959,9 +986,6 @@ button {
 
     .mabile-nav-icons.nav-icons li a {
         background: linear-gradient(132.4deg, rgba(255, 255, 255, 0) 1.31%, rgba(255, 255, 255, 0.05) 50.4%, rgba(255, 255, 255, 0) 99.48%);
-        border: 1px solid;
-        border-image-source: linear-gradient(113.18deg, rgba(255, 255, 255, 0.5) -5.09%, rgba(255, 255, 255, 0) 55.69%),
-            linear-gradient(287.9deg, rgba(255, 255, 255, 0.5) -6.1%, rgba(255, 255, 255, 0) 19.35%);
         backdrop-filter: blur(17.587284088134766px);
     }
 

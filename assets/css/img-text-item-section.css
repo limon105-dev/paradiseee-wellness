@@ -1,0 +1,132 @@
+/* img-text-item-section css start */
+.img-text-item-section {
+    border-bottom: 1px solid;
+    border-image-source: linear-gradient(270deg, #111111 59.97%, rgba(255, 255, 255, 0.6) 100%);
+    border-image-slice: 1;
+}
+
+.img-text-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.img-text-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 20px;
+}
+
+.img-text-item-border {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    padding: 0.67px;
+    background: linear-gradient(169deg, rgba(255, 255, 255, 0.7) 5.52%, rgba(255, 255, 255, 0) 35.55%), linear-gradient(344deg, rgba(255, 255, 255, 0.7) 4.26%, rgba(255, 255, 255, 0) 44.8%);
+    -webkit-mask: linear-gradient(#ffffff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.6;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.img-text-item-img {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.img-text-item-content {
+    width: calc(100% - 140px);
+}
+
+.img-text-item-content-title {
+    text-transform: capitalize;
+}
+
+.img-text-item-content-text {
+    margin: 10px 0 0 0;
+}
+
+/* img-text-item-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* img-text-item-section css start */
+    .img-text-items {
+        gap: 20px;
+    }
+
+    .img-text-item {
+        gap: 16px;
+        padding: 16px;
+    }
+
+    /* img-text-item-section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* img-text-item-section css start */
+    .img-text-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* img-text-item-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* img-text-item-section css start */
+    .img-text-item {
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .img-text-item-img {
+        width: 90px;
+        min-width: 90px;
+        height: 100%;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+
+    .img-text-item-content {
+        width: calc(100% - 98px);
+    }
+
+    .img-text-item-content-title {
+        font-size: 18px;
+    }
+
+    .img-text-item-content-text {
+        margin: 8px 0 0 0;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+
+    /* img-text-item-section css end */
+}

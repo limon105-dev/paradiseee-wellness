@@ -1,0 +1,113 @@
+/* img-text section css start */
+.section.img-text-section {
+    margin: 100px 0;
+    padding: 0;
+}
+
+.img-text-section {
+    position: relative;
+}
+
+.img-text-wrapper {
+    display: flex;
+    min-height: 500px;
+    align-items: center;
+}
+
+.img-text-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 53%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-right: 0;
+}
+
+.img-text-content {
+    max-width: 450px;
+}
+
+.img-text-content-title {
+    text-transform: capitalize;
+    max-width: 400px;
+}
+
+.img-text-content-title em {
+    font-style: normal;
+    color: var(--brand-color);
+}
+
+.img-text-content-text {
+    margin: 20px 0 0 0;
+    max-width: 400px;
+}
+
+.img-text-content ul {
+    margin: 20px 0 0 0;
+}
+
+.img-text-content ul li {
+    margin: 0 0 12px 0;
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.img-text-content ul li::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/check-mark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-text-content ul li p {
+    font-weight: 300;
+}
+
+/* img-text section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* img-text section css start */
+    .img-text-wrapper {
+        height: auto;
+        gap: 20px;
+    }
+
+    .img-text-img {
+        position: unset;
+        width: 53%;
+    }
+
+    /* img-text section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* img-text section css start */
+    .img-text-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .img-text-content {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .img-text-img {
+        width: 100%;
+        border-radius: 10px;
+        border-right: 1px solid var(--border-color);
+    }
+
+    /* img-text section css end */
+}

@@ -58,4 +58,72 @@ $(document).ready(function () {
 		$(this).parent().siblings().removeClass('active').find('.faq-accordion-item-content').slideUp();
 	});
 	// **..product-accordion js end..**
+
+	// --tab js start--
+	$('.tab-nav-item:first-child').addClass('active');
+	$('.desktop-tab-content-item').hide();
+	$('.desktop-tab-content-item:first').show();
+
+	$('.desktop-tabs-nav-item-link').click(function () {
+		$('.tab-nav-item').removeClass('active');
+		$(this).parent().addClass('active');
+		$('.desktop-tab-content-item').hide();
+
+		var activeTab = $(this).attr('href');
+		$(activeTab).fadeIn();
+		return false;
+	});
+	// --tab js end--
 })
+
+// product-slider js start---
+var swiper = new Swiper(".product-slider-thumb", {
+	loop: true,
+	spaceBetween: 20,
+	slidesPerView: 5,
+	freeMode: true,
+	mousewheel: true,
+	breakpoints: {
+		// when window width is >= 320px
+		1: {
+			spaceBetween: 10,
+			slidesPerView: 4,
+		},
+		// when window width is >= 576px
+		576: {
+			spaceBetween: 20,
+			slidesPerView: 5,
+		},
+		// when window width is >= 767px
+		768: {
+			spaceBetween: 20,
+			slidesPerView: 5,
+		}
+	}
+});
+var swiper2 = new Swiper(".product-slider", {
+	loop: true,
+	autoHeight: true,
+	spaceBetween: 10,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	thumbs: {
+		swiper: swiper,
+	},
+});
+// product-slider js end---
+
+// testimonial slider js start--
+var swiper = new Swiper(".testimonial-slider", {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	grabCursor: true,
+	loop: true,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+});
+// testimonial slider js end--

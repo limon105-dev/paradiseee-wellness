@@ -38,17 +38,17 @@
 }
 
 .hero-badge {
-    max-width: 1300px;
+    max-width: 1299px;
     margin: -65px auto 0;
     background: linear-gradient(132.4deg, rgba(255, 255, 255, 0) 1.31%, rgba(255, 255, 255, 0.05) 50.4%, rgba(255, 255, 255, 0) 99.48%);
     backdrop-filter: blur(70px);
-    border: 0.5px solid var(--text-muted);
     padding: 35px 55px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    box-shadow: 0 0 0 0.5px var(--text-muted);
 }
 
 .hero-badge-items {

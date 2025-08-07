@@ -36,6 +36,7 @@
     --black: #000000;
     --white: #ffffff;
     --heading-text-color: #fff;
+    --section-heading-color: #f0f0f0;
     --paragraph-text-color: #fff;
     --brand-color: #FF2A2A;
     /* --card-bg: #ededed; */
@@ -273,7 +274,7 @@ button {
 }
 
 .section-heading {
-    color: var(--heading-text-color);
+    color: var(--section-heading-color);
     text-transform: capitalize;
 }
 

@@ -1,7 +1,7 @@
 /* img-text-item-section css start */
 .img-text-item-section {
     border-bottom: 1px solid;
-    border-image-source: linear-gradient(270deg, #111111 59.97%, rgba(255, 255, 255, 0.6) 100%);
+    border-image-source: linear-gradient(107deg, #111111 59.97%, rgba(255, 255, 255, 0.6) 100%);
     border-image-slice: 1;
 }
 
@@ -22,6 +22,8 @@
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     padding: 20px;
+    background: linear-gradient(214.06deg, rgba(255, 255, 255, 0) 11.58%, rgba(255, 255, 255, 0.05) 53.91%, rgba(255, 255, 255, 0) 96.25%);
+    backdrop-filter: blur(11.72485637664795px);
 }
 
 .img-text-item-border {
@@ -48,11 +50,11 @@
     min-width: 120px;
     height: 120px;
     overflow: hidden;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .img-text-item-content {
@@ -106,11 +108,6 @@
         width: 90px;
         min-width: 90px;
         height: 100%;
-        border-radius: 8px;
-        -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -o-border-radius: 8px;
     }
 
     .img-text-item-content {
